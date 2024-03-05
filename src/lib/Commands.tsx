@@ -246,7 +246,7 @@ export function CommandsPalette({
 </CommandItem>
 </CommandGroup>
 <CommandGroup heading={<GroupHeading>Hire Me</GroupHeading>}>
-<CommandItem href="#">
+<CommandItem href="https://drive.google.com/file/d/1NCD5yg6aiIZHWG1LcGf5TTtV5eI61xUM/view">
   Resume
 </CommandItem>
 
