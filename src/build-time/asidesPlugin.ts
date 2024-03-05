@@ -1,7 +1,7 @@
 import type * as hast from "hast";
 import type { Plugin } from "unified";
 
-export const FLEX_CONTAINER_CLASS = "zaduma-aside";
+export const FLEX_CONTAINER_CLASS = "rohan-aside";
 
 export type AsidesPluginOptions = {};
 

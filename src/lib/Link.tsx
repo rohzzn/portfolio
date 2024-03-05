@@ -20,8 +20,8 @@ export function Link(props: LinkProps) {
           !own.noUnderline,
         "p-2 -mx-2 rounded-sm before:rounded-sm transition-colors relative":
           true,
-        "zaduma-hover-before": true,
-        "zaduma-image-box": childIsImg,
+        "rohan-hover-before": true,
+        "rohan-image-box": childIsImg,
       }}
       {...rest}
     />
@@ -36,7 +36,7 @@ function isChildAnImage(children: JSX.Element) {
   if ("t" in children) {
     let t = children.t as string;
     if (t.startsWith("<astro-")) t = t.slice(t.indexOf(">") + 1, -1);
-    return t.startsWith(`<img `) || t.startsWith(`<span zaduma-image`);
+    return t.startsWith(`<img `) || t.startsWith(`<span rohan-image`);
   }
 
   return false;

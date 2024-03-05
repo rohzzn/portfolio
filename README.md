@@ -1,4 +1,4 @@
-# zaduma
+# rohan
 
 _an [Astro] starter template for understated personal websites_
 
@@ -81,7 +81,7 @@ All commands are run from the root of the project, from a terminal:
 3. Style it and personalize however you like 💅
 4. Set [`VERCEL_TOKEN`], `VERCEL_PROJECT_ID`, and [`VERCEL_ORG_ID`] secrets to
    deploy to Vercel from GHA (what enables access to git history).
-   ([_Settings→Secrets_](https://github.com/hasparus/zaduma/settings/secrets/actions))
+   ([_Settings→Secrets_](https://github.com/hasparus/rohan/settings/secrets/actions))
 
    - Alternatively — if all your blog posts have a `date` in frontmatter, you
      don't need to deploy through _workflows/ci.yml_. Feel free to remove the
@@ -91,7 +91,7 @@ All commands are run from the root of the project, from a terminal:
 
 5. Generate a passphrase for `OG_IMAGE_SECRET` to secure your OG image endpoint,
    and add it to
-   [Actions Secrets](<(https://github.com/hasparus/zaduma/settings/secrets/actions)>).
+   [Actions Secrets](<(https://github.com/hasparus/rohan/settings/secrets/actions)>).
 
 [`vercel_token`]: https://vercel.com/account/tokens
 [`vercel_org_id`]: https://vercel.com/account#your-id

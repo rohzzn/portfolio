@@ -1,4 +1,4 @@
-.zaduma-hover-before {
+.rohan-hover-before {
   @apply relative
     before:content-[''] before:absolute before:inset-0
     before:-z-10 before:pointer-events-none

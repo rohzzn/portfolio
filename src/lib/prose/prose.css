@@ -13,7 +13,7 @@
   }
 }
 
-.zaduma-prose {
+.rohan-prose {
   /* TODO: Get rid of thesse two and apply Tailwind styles */
   --sans: "Inter";
   --serif: "Brygada 1918";
@@ -48,7 +48,7 @@
 }
 
 /* Introduced in src/build-time/asidesPlugin.ts */
-.zaduma-aside {
+.rohan-aside {
   --aside-width: 20em;
   --gap: 1rem;
   --divider-width: 1px;

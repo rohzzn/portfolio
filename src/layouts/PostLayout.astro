@@ -26,7 +26,7 @@ const description = frontmatter.description || ""
 ---
 
 <BaseLayout title={frontmatter.title} ogImage={ogImage} description={description}>
-  <main class="zaduma-prose py-4">
+  <main class="rohan-prose py-4">
     <header
       class="flex justify-between items-start sm:items-center flex-col sm:flex-row"
     >
@@ -60,7 +60,7 @@ const description = frontmatter.description || ""
      {
       /* make the spacing even when there's no callout nor image */
     }
-    .zaduma-prose > header + :is(p, .zaduma-aside) {
+    .rohan-prose > header + :is(p, .rohan-aside) {
       margin-top: 2em;
     }
   </style>
