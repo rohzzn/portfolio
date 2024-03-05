@@ -191,64 +191,65 @@ export function CommandsPalette({
                 </CommandItem>
               </CommandGroup>
               <CommandGroup heading={<GroupHeading>Content</GroupHeading>}>
-              <CommandItem href="https://rohzzn.gumroad.com/" target="_blank">
-                Digital Store
-              </CommandItem>
-              <CommandItem href="https://www.youtube.com/rohzzn" target="_blank">
-                YouTube Videos
-              </CommandItem>
-              <CommandItem href="https://podcasts.apple.com/us/podcast/unheard-perspective/id1665814260?i=1000594827916" target="_blank">
-                Podcast
-              </CommandItem>
-              </CommandGroup>
-              <CommandGroup heading={<GroupHeading>Design</GroupHeading>}>
-                <CommandItem href="https://www.behance.net/rohzzn" target="_blank">
-                  Behance
-                </CommandItem>
-                <CommandItem href="https://dribbble.com/rohzzn" target="_blank">
-                  Dribbble
-                </CommandItem>
-                <CommandItem href="https://www.figma.com/@rohzzn" target="_blank">
-                  Figma
-                </CommandItem>
-              </CommandGroup>
-              <CommandGroup heading={<GroupHeading>Links</GroupHeading>}>
-              <CommandItem href="https://twitter.com/rohzzn" target="_blank">
-                Twitter
-              </CommandItem>
-              <CommandItem href="https://github.com/rohzzn" target="_blank">
-                GitHub
-              </CommandItem>
-              <CommandItem href="https://www.linkedin.com/in/rohzzn/" target="_blank">
-                LinkedIn
-              </CommandItem>
-              <CommandItem href="https://www.instagram.com/rohzzn/" target="_blank">
-                Instagram
-              </CommandItem>
-           
-              <CommandItem href="https://discord.gg/rffUJMApRc" target="_blank">
-                Discord
-              </CommandItem>
-              <CommandItem href="https://open.spotify.com/user/rohansanjeev" target="_blank">
-                Spotify
-              </CommandItem>
-              <CommandItem href="https://steamcommunity.com/id/rohzzn" target="_blank">
-                Steam
-              </CommandItem>
-              <CommandItem href="https://settings.gg/rohzzn" target="_blank">
-                CS Config
-              </CommandItem>
-              <CommandItem href="https://myanimelist.net/profile/rohzzn" target="_blank">
-                MAL
-              </CommandItem>
-              <CommandItem href="/rss.xml" target="_blank">
-                RSS
-              </CommandItem>
-              </CommandGroup>
-              <CommandGroup heading={<GroupHeading>Hire Me</GroupHeading>}>
-              <CommandItem href="#" target="_blank">
-                Resume
-              </CommandItem>
+              <CommandItem href="https://rohzzn.gumroad.com/">
+  Digital Store
+</CommandItem>
+<CommandItem href="https://www.youtube.com/rohzzn">
+  YouTube Videos
+</CommandItem>
+<CommandItem href="https://podcasts.apple.com/us/podcast/unheard-perspective/id1665814260?i=1000594827916">
+  Podcast
+</CommandItem>
+</CommandGroup>
+<CommandGroup heading={<GroupHeading>Design</GroupHeading>}>
+  <CommandItem href="https://www.behance.net/rohzzn">
+    Behance
+  </CommandItem>
+  <CommandItem href="https://dribbble.com/rohzzn">
+    Dribbble
+  </CommandItem>
+  <CommandItem href="https://www.figma.com/@rohzzn">
+    Figma
+  </CommandItem>
+</CommandGroup>
+<CommandGroup heading={<GroupHeading>Links</GroupHeading>}>
+<CommandItem href="https://twitter.com/rohzzn">
+  Twitter
+</CommandItem>
+<CommandItem href="https://github.com/rohzzn">
+  GitHub
+</CommandItem>
+<CommandItem href="https://www.linkedin.com/in/rohzzn/">
+  LinkedIn
+</CommandItem>
+<CommandItem href="https://www.instagram.com/rohzzn/">
+  Instagram
+</CommandItem>
+
+<CommandItem href="https://discord.gg/rffUJMApRc">
+  Discord
+</CommandItem>
+<CommandItem href="https://open.spotify.com/user/rohansanjeev">
+  Spotify
+</CommandItem>
+<CommandItem href="https://steamcommunity.com/id/rohzzn">
+  Steam
+</CommandItem>
+<CommandItem href="https://settings.gg/rohzzn">
+  CS Config
+</CommandItem>
+<CommandItem href="https://myanimelist.net/profile/rohzzn">
+  MAL
+</CommandItem>
+<CommandItem href="/rss.xml">
+  RSS
+</CommandItem>
+</CommandGroup>
+<CommandGroup heading={<GroupHeading>Hire Me</GroupHeading>}>
+<CommandItem href="#">
+  Resume
+</CommandItem>
+
               <CommandItem href="mailto:rohan.mbox@gmail.com">
                 Contact
               </CommandItem>
