@@ -1,4 +1,3 @@
----
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { formatDate } from "../lib/formatDate";
 import { Link } from "../lib/Link";
@@ -17,6 +16,10 @@ posts.sort((a, b) => {
     new Date(a.frontmatter.date).getTime()
   );
 });
+
+const userId = '407922731645009932';
+const res = await fetch(`https://api.lanyard.rest/v1/users/${userId}`);
+const userData = await res.json();
 ---
 
 <BaseLayout
@@ -84,8 +87,9 @@ posts.sort((a, b) => {
     </div>
   </div>
 
-<br />
-<br />
+  <br />
+  <br />
+
   <ul>
     {
       posts.map(({ frontmatter }) => {
@@ -121,4 +125,20 @@ posts.sort((a, b) => {
       }
     }
   </style>
+  <footer>
+    {userData.success ? (
+      <div>
+        <h2>{userData.data.discord_user.username}</h2>
+        <p>Discord Status: {userData.data.discord_status}</p>
+        {userData.data.activities.map((activity) => (
+          <div class="flex flex-row items-center gap-2">
+            <h3 class="text-gray-800 dark:text-gray-300 font-sans">{activity.name}</h3>
+            <p class="text-gray-600 dark:text-gray-400">{activity.details} {activity.state}</p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p>Error fetching Discord presence</p>
+    )}
+  </footer>
 </BaseLayout>
