@@ -31,10 +31,22 @@ const userData = await res.json();
   <main class="py-10 rohan-prose">
     <Paragraph>
       <small class="text-gray-600 dark:text-gray-500"
-        >22, He/Him</small
+        >22, He/Him, Status: {userData.data.discord_status}</small
       >
       <br />
       I'm a passionate software engineer with a keen interest in creating good user experiences. I also enjoy freelancing, content creation.
+    {userData.success ? (
+      <div>
+        {userData.data.activities.map((activity: { name: unknown; details: unknown; state: unknown; }) => (
+          <div class="flex flex-row items-center gap-2">
+            <h3 class="text-gray-800 dark:text-gray-300 font-sans">{activity.name}{':'}</h3>
+            <p class="text-gray-600 dark:text-gray-400">{activity.details}{' '}{activity.state}</p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p>Error fetching Discord presence</p>
+    )}
     </Paragraph>
   </main>
     <Paragraph>
@@ -126,20 +138,4 @@ const userData = await res.json();
       }
     }
   </style>
-  <footer>
-    {userData.success ? (
-      <div>
-        <h2>{userData.data.discord_user.username}</h2>
-        <p>Discord Status: {userData.data.discord_status}</p>
-        {userData.data.activities.map((activity) => (
-          <div class="flex flex-row items-center gap-2">
-            <h3 class="text-gray-800 dark:text-gray-300 font-sans">{activity.name}</h3>
-            <p class="text-gray-600 dark:text-gray-400">{activity.details} {activity.state}</p>
-          </div>
-        ))}
-      </div>
-    ) : (
-      <p>Error fetching Discord presence</p>
-    )}
-  </footer>
 </BaseLayout>
